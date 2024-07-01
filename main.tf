@@ -24,7 +24,7 @@ variable TFC_AWS_RUN_ROLE_ARN {}
 
 # provider arguments call on the variables which then call on terraform.tfvars for the values.
 provider "aws" {
-  region     = "us-east-2"
+  region     = var.AWS_REGION
 }
 
 # Add .gitignore file in this directory with the terraform.tfvars
